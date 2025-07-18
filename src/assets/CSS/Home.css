@@ -1,0 +1,348 @@
+/* --- Base Home Page Styles --- */
+.main-content {
+  margin-left: 250px;
+  padding: 32px 24px 24px 24px;
+  background: #fafbff;
+  min-height: 100vh;
+  transition: margin-left 0.3s;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 18px;
+}
+
+.stats-card {
+  flex: 1;
+  border-radius: 10px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  min-width: 100px;
+}
+
+.stats-label {
+  font-size: 1.1rem;
+  color: black !important;
+  margin-bottom: 4px;
+}
+
+.stats-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black !important;
+}
+
+.trainers-section {
+  background: #d8f275 !important;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+  flex: 2;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trainers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trainer-card {
+  display: flex;
+  align-items: center;
+  background: transparent !important;
+  border-radius: 8px;
+  padding: 8px 14px;
+  gap: 14px;
+}
+
+.trainer-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+  background-color: black !important;
+  color:white !important;
+}
+
+.upload-btn {
+  background: #eaf7d6;
+  color: #2b7a29;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.upcoming-section {
+  background: #d8f275 !important;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+  flex: 1;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upcoming-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.upcoming-card {
+  background: transparent !important;
+  border-radius: 8px;
+  padding: 10px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.upload-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 1px dashed #b2b2b2;
+}
+
+
+.stats-card {
+  flex: 1 1 180px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  min-width: 160px;
+}
+.stats-card .stats-label {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 8px;
+}
+.stats-card .stats-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.trainers-section {
+  background: #eaf7d6;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+.trainers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.trainer-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 18px;
+}
+.trainer-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.upcoming-section {
+  background: #f8ffda;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+.upcoming-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.upcoming-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.upload-section {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 18px;
+  border: 1px dashed #b2b2b2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.upload-section input[type="file"] {
+  display: none;
+}
+.upload-label {
+  color: #888;
+  margin-bottom: 8px;
+}
+.upload-btn {
+  background: #eaf7d6;
+  color: #222;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.stats-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+
+/* Tablet: Sidebar overlays, less margin */
+@media (max-width: 900px) and (min-width: 601px) {
+  .main-content {
+    margin-left: 10px;
+    padding: 80px 8px 16px 8px;
+  }
+  .stats-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Mobile: Full width, top padding for hamburger */
+@media (max-width: 600px) {
+  .main-content {
+    margin-left: 0;
+    padding: 70px 4px 8px 4px;
+  }
+  .stats-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .trainers-section, .upcoming-section {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+  .trainer-card {
+    padding: 8px 8px;
+  }
+  .upload-section {
+    padding: 10px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .main-content {
+    margin-left: 250px;
+    padding: 28px 16px 20px 16px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .main-content {
+    margin-left: 10px;
+    padding: 80px 8px 16px 8px;
+  }
+  .stats-row {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .stats-card {
+    flex: 1 1 180px;
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    margin-left: 0;
+    padding: 70px 4px 8px 4px;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .stats-row {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .stats-card {
+    flex: 1 1 180px;
+    min-width: 150px;
+    max-width: 220px;
+    margin-bottom: 12px;
+  }
+  .trainers-section, .upcoming-section, .upload-section {
+    padding: 14px 12px;
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: 901px) {
+  .stats-row {
+    gap: 32px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .stats-card {
+    flex: 1 1 220px;
+    min-width: 180px;
+    max-width: 320px;
+    margin-bottom: 0;
+  }
+  .trainers-section, .upcoming-section, .upload-section {
+    padding: 22px 20px;
+    margin-bottom: 22px;
+  }
+  .home-header {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 28px;
+    margin-bottom: 32px;
+  }
+}
+
+
+
